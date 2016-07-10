@@ -37,33 +37,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         capstone.setOnClickListener(this);
     }
 
-
-
+    private void showToastMessage(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+    }
 
     @Override
     public void onClick(View v) {
 
         switch (v.getId()) {
             case R.id.popular_movies:
-                Toast.makeText(this, "This button will launch my popular movies app!", Toast.LENGTH_LONG).show();
+                showToastMessage("This button will launch my popular movies app!");
                 break;
 
             case R.id.stock_hawk:
-                Toast.makeText(this, "This button will launch my stock hawk app!", Toast.LENGTH_LONG).show();
+                showToastMessage("This button will launch my stock hawk app!");
                 break;
 
             case R.id.build_it_bigger:
-                Toast.makeText(this, "This button will launch my build it bigger app!", Toast.LENGTH_LONG).show();
+                showToastMessage("This button will launch my build it bigger app!");
                 break;
 
             case R.id.make_your_app_material:
-                Toast.makeText(this, "This button will launch my make your app material app!", Toast.LENGTH_LONG).show();
+                showToastMessage("This button will launch my make your app material app!");
                 break;
             case R.id.go_ubiquitous:
-                Toast.makeText(this, "This button will launch my go ubiquitous app!", Toast.LENGTH_LONG).show();
+                showToastMessage("This button will launch my go ubiquitous app!");
                 break;
             case R.id.capstone:
-                Toast.makeText(this, "This button will launch my capstone app!", Toast.LENGTH_LONG).show();
+                showToastMessage("This button will launch my capstone app!");
                 break;
         }
 
